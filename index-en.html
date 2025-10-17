@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sustainable Dream Workshop</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    /* Language banner style */
+    #language-banner {
+      position: fixed;
+      top: 10px;
+      right: 10px;
+      background-color: #003366;
+      color: white;
+      padding: 8px 14px;
+      border-radius: 25px;
+      font-weight: 700;
+      font-family: Arial, sans-serif;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+      z-index: 9999;
+      cursor: pointer;
+      user-select: none;
+      display: flex;
+      gap: 12px;
+      align-items: center;
+    }
+    #language-banner span {
+      padding: 4px 10px;
+      border-radius: 20px;
+      transition: background-color 0.3s;
+    }
+    #language-banner span:hover {
+      background-color: #00509e;
+    }
+    #language-banner .active {
+      background-color: #ffd700;
+      color: #003300;
+      font-weight: 900;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- LANGUAGE BANNER -->
+  <div id="language-banner">
+    <span id="lang-tr">TR</span> | 
+    <span id="lang-en" class="active">EN</span>
+  </div>
+
+  <header>
+    <h1>Sustainable Dream Workshop</h1>
+    <nav>
+      <a href="index-en.html">Home</a>
+      <a href="about-en.html">About Us</a>
+      <a href="gallery-en.html">Gallery</a>
+      <a href="join-en.html">Join</a>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>My Dream for 2030</h2>
+      <p>Are you ready to discover how individuals with special needs design a sustainable future with their imagination?</p>
+      <a href="join-en.html"><button>Share My Dream</button></a>
+    </section>
+
+    <!-- Poster section -->
+    <section id="poster" style="
+      background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+      color: white;
+      padding: 50px 30px;
+      border-radius: 15px;
+      max-width: 750px;
+      margin: 50px auto;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    ">
+
+      <!-- SVGs and other content go here... -->
+
+      <h1 style="font-size: 3rem; margin-bottom: 0.2em; font-weight: 900; text-shadow: 1px 1px 3px rgba(0,0,0,0.3);">
+        Sustainable Dream Workshop
+      </h1>
+      <p style="font-style: italic; font-size: 1.6rem; margin-bottom: 1.5em; text-shadow: 1px 1px 2px rgba(0,0,0,0.2);">
+        “My Dream for 2030”
+      </p>
+
+      <p style="font-size: 1.25rem; max-width: 650px; margin: 0 auto 1.8em; line-height: 1.5; text-shadow: 0 1px 2px rgba(0,0,0,0.2);">
+        A digital platform where children with special needs share their dreams through writing, drawing, and voice for an inclusive and sustainable future.
+      </p>
+
+      <p style="font-weight: 700; font-size: 1.3rem; margin-bottom: 2em; text-shadow: 0 1px 2px rgba(0,0,0,0.3);">
+        Shaping the future together!
+      </p>
+
+      <div style="font-size: 1rem; line-height: 1.4; max-width: 650px; margin: 0 auto 2.5em; color: #d1eaff;">
+        <p>This project was conducted by students of the Special Education Department at Düzce University Faculty of Education as part of the Sustainable Development and Education course led by Dr. Lecturer Beyhan BAYRAK.</p>
+      </div>
+
+      <a href="join-en.html" style="
+        background-color: #ffd700;
+        color: #004d00;
+        font-weight: 700;
+        font-size: 1.2rem;
+        padding: 16px 40px;
+        border-radius: 30px;
+        text-decoration: none;
+        box-shadow: 0 5px 10px rgba(255, 215, 0, 0.6);
+        transition: background-color 0.3s, color 0.3s;
+        display: inline-block;
+      " onmouseover="this.style.backgroundColor='#ffc107'; this.style.color='#003300';" onmouseout="this.style.backgroundColor='#ffd700'; this.style.color='#004d00';">
+        Share Your Dream with Us!
+      </a>
+    </section>
+  </main>
+
+  <!-- UPDATED FOOTER -->
+  <footer style="
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+    color: #ffffffcc;
+    background-color: #003366;
+    margin-top: 50px;
+  ">
+    <p>© 2025 Sustainable Dream Workshop</p>
+    <p>Contact: 
+      <a href="mailto:hayalatolyesi2030@gmail.com" style="color: #ffffffcc; text-decoration: underline;">
+        hayalatolyesi2030@gmail.com
+      </a>
+    </p>
+    <p style="margin-top: 10px;">
+      Follow us:
+      <a href="https://instagram.com/hayalatolyesi2030" target="_blank" style="margin: 0 10px;">
+        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram" style="width: 20px; height: 20px; vertical-align: middle; filter: invert(100%);" />
+      </a>
+      <a href="https://x.com/hayalatolyesi2030" target="_blank" style="margin: 0 10px;">
+        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/x.svg" alt="X" style="width: 20px; height: 20px; vertical-align: middle; filter: invert(100%);" />
+      </a>
+    </p>
+  </footer>
+
+<script>
+  // Language options
+  const langTR = document.getElementById('lang-tr');
+  const langEN = document.getElementById('lang-en');
+
+  // Language switch function
+  function changeLanguage(lang) {
+    if(lang === 'en') {
+      langEN.classList.add('active');
+      langTR.classList.remove('active');
+      // We're on English page, no redirect needed
+    } else if(lang === 'tr') {
+      langTR.classList.add('active');
+      langEN.classList.remove('active');
+      // Redirect to Turkish page
+      window.location.href = 'index.html';
+    }
+  }
+
+  // Event listeners
+  langTR.addEventListener('click', () => changeLanguage('tr'));
+  langEN.addEventListener('click', () => changeLanguage('en'));
+</script>
+
+</body>
+</html>
